@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head><meta charset="utf-8"></head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="tree"></div>
+    <div id="context-menu">
+        <ul>
+            <li>
+                <a href="#"href="#" id='rename-link'>Rename</a>
+            </li>
+            <li>
+                <a href="#"href="#" id='create-link'>Create</a>
+            </li>
+            <li>
+                <a href="#"href="#" id ='delete-link'>Delete</a>
+            </li>
+        </ul>
+    </div>
+    <div id="add-node">
+        <form action="#">
+            <fieldset>
+                <input type="text" placeholder="new node name" id='add-node_text'>
+                <button>add node</button>
+            </fieldset>
+        </form>
+    </div>
+    <div id="modal">
+        <div class="modal-input">
+            <form id="modal-form">
+                <input type="text">
+                <input type='submit' value='Додати вершину' id='modal-add_node'>
+                <div class="close">×</div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+	font: 400 12px/15px Arial, sans-serif;
+}
+#tree, #tree ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+#tree li{
+    padding-left: 1.3em;
+    cursor: pointer;
+}
+#tree:before,
+#tree:after {
+    content:"";
+    display:table;
+}
+#tree:after {
+    clear:both;
+}
+#tree > ul {
+	float: left;
+}
+#tree a{
+	text-decoration: none;
+	color: #333;
+	padding: 2px 4px;
+}
+#tree{
+}
+#context-menu{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #c1d1c1;
+	background-color: #f6f6f6;
+}
+#context-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#context-menu li {
+    background: none;
+}
+#context-menu a{
+	display: block;
+	padding: 5px 8px;
+	border-top: 1px solid #c1c1c1;
+	text-decoration: none;
+}
+#context-menu a:hover{
+	background-color: rgba(200,200,200,.3);
+}
+#context-menu li:first-child a{
+	border-top: none;
+}
+/*.open{
+    background: url("images/plus.png") no-repeat -16px -89px;
+}
+.close{
+    background: url("images/plus.png") no-repeat -48px -45px;
+}*/
+#highline {
+	background-color: rgb(198, 233, 193);
+}
+#add-node{
+	display: none;
+}
+#add-node fieldset {
+	border: 0;
+}
+.connector {
+	display: inline-block;
+	*display: inline;
+	height: 16px;
+	width: 16px;
+	vertical-align: -2px;
+}
+.open > span > .connector {
+	background: url("images/plus.png") no-repeat -16px -89px;
+}
+.close > span > .connector {
+	background: url("images/plus.png") no-repeat -48px -45px;
+}
+.connector {
+	background: url("images/treeview.gif") no-repeat 0 -1600px;
+}
+
+#modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+	overflow: hidden;
+}
+#modal .modal-input{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -100px;
+	width: 400px;
+	background-color: #fcfcfc;
+	display: table-row;
+	border-radius: 3px;
+	box-shadow: 0px 0px 40px 20px rgba(0, 0, 0,.3);
+}
+#modal #modal-form{
+	text-align: center;
+	vertical-align: middle;
+	height: 200px;
+	display: table-cell;
+	width: 1%;
+}
+#modal-form input[type="text"],
+#add-node input[type="text"]{
+	border: 1px solid #ccc;
+	padding: 4px 3px;
+}
+#modal-form input[type="submit"],
+#add-node button{
+	border: 1px solid #ccc;
+	padding: 4px 6px;
+	background-color: #f2f2f2;
+}
+#modal .close{
+	position: absolute;
+	top: 0;
+	right: 2px;
+	padding: 10px;
+	font-size: 30px;
+	color: #5363a3;
+	cursor: pointer;
+}
